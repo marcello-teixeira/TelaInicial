@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTR-8">
+        <meta name="viesport" content="width=device-width, initial-scale=1.0">
+        <title>E-carrinho | Home</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="shortcut icon" href="folder/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="ScreenRegister">
+            Sou novo por aqui
+        </div>
+        <img src="folder/shop.png" alt="Icone Carrinho de Compras">
+        <div id="ScreenLogin">
+            Já tenho cadastro
+        </div>
+    </header>
+    <main>
+        <p id="welcomeMsg">
+            Bem-vindo ao E-carrinho! <span>Acesse sua conta ou crie uma para usar o site</span>
+        </p>
+        <form action="#" autocomplete="on" id="ScreenRegisterForm">
+            <div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" class="classRegister" placeholder=" Digite seu nome aqui" size="45" required>
+            </div>
+            <div>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" class="classRegister" placeholder=" 00000-00"  size="30" pattern="^\d{5}-\d{2}$"required>
+            </div>
+            <div>
+                <label for="emailRegister">Email:</label>
+                <input type="emailRegister" id="email" class="classRegister" placeholder=" email@email.com" size="45" required>
+            </div>
+            <div>
+                <label for="passwordRegister">Senha:</label>
+                <input type="password" id="passwordRegister" class="classRegister" placeholder=" Mínimo de 8 caracteres" size="30" minlength="8" required>
+            </div>
+            
+            <input type="submit" value="Cadastrar" id="buttonRegister">
+            
+        </form>
+        <form action="#" autocomplete="on" id="ScreenLoginForm">
+            <div>
+                <label for="emailLogin">Email:</label>
+                <input type="email" id="emailLogin" required class="classLogin" placeholder=" Digite seu email" size="45">
+            </div>
+            <div>
+                <label for="passwordLogin">Senha:</label>
+                <input type="password" required size="30" class="classLogin" placeholder=" Digite sua senha">
+            </div>
+            <input type="submit" value="Entrar" id="buttonLogin">
+
+        </form>
+    </main>
+    <footer>
+        <aside>
+            ©   E-carrinho, Inc. 2024  <a href="#">Terms</a> <a href="#">Privacy</a> <a href="#">Security</a> <a href="#">Status</a> <a href="#">Contact</a>  
+        </aside>        
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    
+    <script type="module" src="js/src.js">
+    </script>
+</body>
+</html>
